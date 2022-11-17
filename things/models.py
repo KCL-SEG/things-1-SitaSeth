@@ -7,8 +7,8 @@ def validate_quantity(q):
         if q<0  or q>100:
             #from django official documentation
             raise ValidationError(
-            _('%(value)s is not in the required range of 0-100 (inclusive)'),
-            params={'value': value},
+            _('%(q)s is not in the required range of 0-100 (inclusive)'),
+            params={'value': q},
         )
 
 # Create your models here.
